@@ -22,7 +22,7 @@
     "postpublish": "git push"
   },
   "dependencies": {
-    "array-to-true-map": "0.0.1"
+    "array-to-true-map": "~0.1.0"
   },
   "devDependencies": {
     "browserify": "~13.0.0",
