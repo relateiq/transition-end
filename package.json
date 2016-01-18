@@ -1,6 +1,6 @@
 {
   "name": "transition-end",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "transition-end callback for 1 or many aggregated style property transitions",
   "main": "src/index.js",
   "author": "Anthony Liatsis <anthony.liatsis@gmail.com>",
