@@ -1,9 +1,9 @@
 {
   "name": "transition-end",
   "version": "0.0.1",
-  "description": "a template for basic js packages",
+  "description": "transition-end callback for 1 or many aggregated style property transitions",
   "main": "src/index.js",
-  "author": "aliatsis@salesforce.com",
+  "author": "Anthony Liatsis <anthony.liatsis@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/relateiq/transition-end",
   "repository": {
@@ -13,18 +13,36 @@
     "url": "https://github.com/relateiq/transition-end/issues"
   },
   "iqproj": {
-    "app": false
+    "app": true
   },
   "scripts": {
-    "test": "bin/iqb test",
+    "test": "bin/iqb karma",
     "start": "bin/iqb start",
-    "preversion": "bin/iqb build",
+    "preversion": "bin/iqb karma",
     "postpublish": "git push"
   },
-  "dependencies": {},
+  "dependencies": {
+    "array-to-true-map": "0.0.1"
+  },
   "devDependencies": {
+    "browserify": "~13.0.0",
+    "browserify-istanbul": "~0.2.1",
     "chokidar-cli": "~1.0.1",
-    "tape": "~4.2.1"
+    "connect-livereload": "~0.5.4",
+    "exorcist": "~0.4.0",
+    "express": "~4.13.3",
+    "jasmine": "~2.4.1",
+    "jasmine-core": "~2.4.1",
+    "karma": "~0.13.19",
+    "karma-browserify": "~4.4.2",
+    "karma-chrome-launcher": "~0.2.2",
+    "karma-jasmine": "~0.3.6",
+    "karma-phantomjs-launcher": "~0.2.3",
+    "node-sass": "~3.4.2",
+    "phantomjs": "~1.9.19",
+    "tiny-lr": "~0.2.1",
+    "watchify": "~3.7.0",
+    "yargs": "~3.31.0"
   },
   "publishConfig": {
     "registry": "https://relateiq.artifactoryonline.com/relateiq/api/npm/npm-local/"
